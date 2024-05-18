@@ -90,3 +90,38 @@ input{
     left: 75px;
 
 }
+
+
+
+@media  screen and (max-width:850px) {
+    
+
+    #main-section{
+        flex-direction: column;
+        /* justify-content: space-around; */
+    }
+
+    #message-to-user{
+        display: flex;
+        justify-content: center;
+        border-right: none;
+        border-bottom: 5px #000 double;
+
+    }
+
+    #message-to-user h2{
+
+       height: 400px;
+       width: 400px;
+       text-align:center;
+       font-size: 90px;
+       margin-left: 150px;
+       border-radius: 250px;
+        
+    }
+
+    #blog-form{
+        justify-content: center;
+        margin-left:0;
+    }
+}
