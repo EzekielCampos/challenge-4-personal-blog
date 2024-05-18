@@ -22,7 +22,11 @@ display: flex;
 }
 #message-to-user{
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 border-right: 5px #000 double;
+height: 670px;
 
 }
 /* header text for user to see */
@@ -31,32 +35,58 @@ border-right: 5px #000 double;
     background-color: antiquewhite;
     padding: 50px;
     border-radius: 100px;
-    margin-top: 20%;
-    margin-right: 300px;
+    /* margin-top: 20%; */
+    margin-right: 200px;
+    margin-left: 75px;
 
 
 }
 
 /* This is used for all the input section */
 #blog-form{
-    margin-top: 20%;
+    margin-top: 50px;
     display: flex;
+    /* flex-wrap: wrap; */
     margin-left: 100px;
+    margin-bottom: 50px;
 
+}
+
+form{
+    /* border: 5px black solid; */
+    width: 500px;
+    
 }
 
 input{
     display: block;
-    /* margin 50px,50px; */
+    margin-bottom: 50px;
+    margin-top: 10px;
+    height: 30px;
+    width: 90%;
 }
+
+
 
 /* This id is for the textarea to write a post */
 #msg{
 
+    height: 50%;
+    width: 90%;
+    margin-bottom: 10px;
 
 }
+
+
 /* This id is for the button */
 #post{
 
+
+    width: 60%;
+    height: 30px;
+    background-color: deepskyblue;
+    border-radius: 50px;
+    position: relative;
+    left: 75px;
 
 }
