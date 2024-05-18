@@ -12,6 +12,7 @@ header{
 header p{
 
     margin-right: 10px;
+    
 }
 
 #main-section{
@@ -19,19 +20,34 @@ header p{
 display: flex;
 
 }
-
 #message-to-user{
 
+border-right: 5px #000 double;
+
+}
+/* header text for user to see */
+#message-to-user h2{
+
     background-color: antiquewhite;
-    padding: 20px;
-    border-radius: 20px;
+    padding: 50px;
+    border-radius: 100px;
+    margin-top: 20%;
+    margin-right: 300px;
+
 
 }
 
 /* This is used for all the input section */
 #blog-form{
+    margin-top: 20%;
+    display: flex;
+    margin-left: 100px;
 
+}
 
+input{
+    display: block;
+    /* margin 50px,50px; */
 }
 
 /* This id is for the textarea to write a post */
