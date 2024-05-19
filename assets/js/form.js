@@ -42,11 +42,21 @@ submitButton.addEventListener("click", function(event){
 
 event.preventDefault();
 
+
+
 const userInput = userName.value;
 
 const userTitle = titelOfPost.value;
 
 const content = usersPost.value.trim();
+
+
+if (!userInput || !userTitle || !content){
+
+  alert("Must fill out all sections");
+  return;
+
+}
 
 
 userPostInfo.push({user:userInput, title:userTitle, post:content});

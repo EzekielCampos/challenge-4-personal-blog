@@ -15,12 +15,15 @@ function renderBlogPost(){
         const title = document.createElement('h2');
         const blogContent = document.createElement('p');
         const author = document.createElement('p');
+        const contentBox = document.createElement('div');
+
 
         title.innerHTML = posts.user;
         blogContent.innerHTML = posts.post;
         author.innerHTML = posts.user;
 
-        blogSection.append(title, blogContent, author);
+        contentBox.append(title, blogContent, author);
+        blogSection.append(contentBox);
 
 
 
