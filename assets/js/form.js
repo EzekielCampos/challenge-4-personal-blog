@@ -11,7 +11,6 @@ const titelOfPost = document.querySelector("#title-post");
 
 const usersPost = document.querySelector("#msg");
 
-
 const submitButton = document.querySelector("#post");
 
 // This function stores newly added post to the local storage
@@ -20,6 +19,12 @@ function storePost(){
 localStorage.setItem("userPostInfo", JSON.stringify(userPostInfo));
 
 }
+
+// function redirect(){
+
+//     document.location.href = ./blog.html;
+
+// }
 
 // This submit all the data
 submitButton.addEventListener("click", function(event){
@@ -32,15 +37,17 @@ let userTitle = titelOfPost.value;
 
 let content = usersPost.value;
 
-console.log(userTitle);
-console.log(content);
-
-console.log(userInput);
 
 userPostInfo.push({user:userInput, title:userTitle, post:content});
 
 storePost();
 
-console.log(userPostInfo);
+// Clears the input fields
+userName.value = '';
+titelOfPost.value= '';
+usersPost.value = '';
+
+
+
 
 });
