@@ -3,7 +3,21 @@
     background-color: #000;
     color: #fff;
     border-color: #fff;
+    header{
+        border-bottom: 5px #fff double;
+    }
+
+    
+
+    #message-to-user h2{
+        background-color: darkgrey;
+    }
+    #post{
+
+        background-color:darkgray
+    }
 }
+
 
 
 header{
