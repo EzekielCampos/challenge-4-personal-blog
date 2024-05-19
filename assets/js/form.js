@@ -20,34 +20,53 @@ localStorage.setItem("userPostInfo", JSON.stringify(userPostInfo));
 
 }
 
-// function redirect(){
+function redirect(){
 
-//     document.location.href = ./blog.html;
+    document.location.href = "file:///Users/ezekielcampos/Desktop/bootcamp-hw/challenge-4/blog.html";
 
-// }
+}
+
+function init() {
+
+    const storedPost = JSON.parse(localStorage.getItem('userPostInfo'));
+    // TODO: Describe the functionality of the following `if` statement.
+    if (storedPost !== null) {
+      userPostInfo = storedPost;
+    }
+ 
+    console.log('a');
+  }
 
 // This submit all the data
 submitButton.addEventListener("click", function(event){
 
 event.preventDefault();
 
-let userInput = userName.value;
+const userInput = userName.value;
 
-let userTitle = titelOfPost.value;
+const userTitle = titelOfPost.value;
 
-let content = usersPost.value;
+const content = usersPost.value.trim();
 
 
 userPostInfo.push({user:userInput, title:userTitle, post:content});
 
-storePost();
-
-// Clears the input fields
 userName.value = '';
 titelOfPost.value= '';
 usersPost.value = '';
 
 
+storePost();
+
+
+// Clears the input fields
+
+
+
+
+// redirect();
 
 
 });
+
+init();

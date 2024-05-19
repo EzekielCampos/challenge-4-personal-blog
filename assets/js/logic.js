@@ -23,11 +23,12 @@ darkMode.addEventListener("click", function(event){
             const timerInterval = setInterval(function(){
 
                 emoji.innerHTML = "&#127769";
+                change.setAttribute("class", "dark");
                 clearInterval(timerInterval);
 
 
-            },200);
-            change.setAttribute("class", "dark");
+            },500);
+         
 
             emoji.setAttribute("id", "moon");
 
@@ -40,15 +41,16 @@ darkMode.addEventListener("click", function(event){
             const timerInterval = setInterval(function(){
 
                 emoji.innerHTML = " &#127774";
+                change.setAttribute("class", "light");
                 clearInterval(timerInterval);
 
 
-            },200);
+            },500);
 
 
             emoji.setAttribute("id", "sun");
 
-            change.setAttribute("class", "light");
+            
            
 
         }
