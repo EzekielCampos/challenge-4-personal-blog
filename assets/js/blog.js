@@ -7,6 +7,8 @@ let blogPosts = JSON.parse(localStorage.getItem('userPostInfo'));
 
 const blogSection = document.querySelector("section");
 
+const backButton = document.querySelector("button");
+
 // This function will show the blog post rendered on the page
 function renderBlogPost(){
 
@@ -32,5 +34,26 @@ function renderBlogPost(){
 
 
 }
+
+
+function redirect(){
+
+
+    document.location.href = "./index.html";
+
+}
+
+
+
+backButton.addEventListener("click", function(){
+
+
+redirect();
+
+
+
+});
+
+
 
 renderBlogPost();

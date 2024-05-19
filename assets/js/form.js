@@ -22,7 +22,7 @@ localStorage.setItem("userPostInfo", JSON.stringify(userPostInfo));
 
 function redirect(){
 
-    document.location.href = "file:///Users/ezekielcampos/Desktop/bootcamp-hw/challenge-4/blog.html";
+    document.location.href = "./blog.html";
 
 }
 
@@ -69,12 +69,7 @@ usersPost.value = '';
 storePost();
 
 
-// Clears the input fields
-
-
-
-
-// redirect();
+redirect();
 
 
 });
