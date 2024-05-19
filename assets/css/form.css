@@ -1,0 +1,64 @@
+#blog-form{
+    margin-top: 50px;
+    display: flex;
+    margin-left: 100px;
+    margin-bottom: 50px;
+
+}
+
+form{
+    /* border: 5px black solid; */
+    width: 500px;
+    
+}
+
+input{
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    height: 30px;
+    width: 90%;
+}
+
+
+
+/* This id is for the textarea to write a post */
+#msg{
+
+    height: 50%;
+    width: 90%;
+    margin-bottom: 10px;
+
+}
+
+
+/* This id is for the button */
+#post{
+
+
+    width: 60%;
+    height: 30px;
+    background-color: deepskyblue;
+    border-radius: 50px;
+    position: relative;
+    left: 75px;
+
+}
+
+
+
+@media  screen and (max-width:1050px) {
+
+    #blog-form{
+        justify-content: center;
+        margin-left:0;
+       
+    }
+    
+    form{
+        margin-bottom: 100px;
+    }
+
+
+}
+
