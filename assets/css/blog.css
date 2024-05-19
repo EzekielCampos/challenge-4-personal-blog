@@ -18,6 +18,16 @@ header{
 
 }
 
+#back-home{
+
+    position: absolute;
+    left: 1175px;
+    padding:5px;
+
+
+
+}
+
 #all-posts{
 
     display: flex;
@@ -26,5 +36,19 @@ header{
 
 
 }
+
+
+
+#sun:hover{
+
+    font-size: 20px;
+
+}
+
+#moon:hover{
+
+    font-size: 20px;
+}
+
 
 

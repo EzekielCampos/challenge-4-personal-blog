@@ -20,6 +20,7 @@ localStorage.setItem("userPostInfo", JSON.stringify(userPostInfo));
 
 }
 
+// This function will take the user back to the login page
 function redirect(){
 
     document.location.href = "./blog.html";

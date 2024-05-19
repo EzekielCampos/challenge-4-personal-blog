@@ -67,6 +67,17 @@ height: 670px;
 }
 
 
+#sun:hover{
+
+    font-size: 20px;
+
+}
+
+#moon:hover{
+
+    font-size: 20px;
+}
+
 
 
 @media  screen and (max-width:1050px) {
