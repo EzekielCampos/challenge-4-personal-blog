@@ -17,12 +17,14 @@ function renderBlogPost(){
         const title = document.createElement('h2');
         const blogContent = document.createElement('p');
         const author = document.createElement('p');
+        // set this attribute to make modifications when it's rendered on page
+        author.setAttribute("id", "author");
         const contentBox = document.createElement('div');
 
 
         title.innerHTML = posts.user;
         blogContent.innerHTML = posts.post;
-        author.innerHTML = posts.user;
+        author.innerHTML = "Posted by " + posts.user;
 
         contentBox.append(title, blogContent, author);
         blogSection.append(contentBox);
@@ -44,13 +46,10 @@ function redirect(){
 }
 
 
-
+// This will redirect the user back to the main page
 backButton.addEventListener("click", function(){
 
-
-redirect();
-
-
+    redirect();
 
 });
 

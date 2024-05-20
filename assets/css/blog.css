@@ -32,9 +32,37 @@ header{
 
     display: flex;
     flex-direction: column;
+    align-items: center;
 
 
 
+}
+
+
+#all-posts div{
+
+    width:70%;
+
+border: #000 3px solid;
+margin-bottom: 20px;
+margin-top:10px;
+padding:20px;
+
+
+
+}
+
+#all-posts h2{
+
+border-bottom: #000 2px solid;
+
+}
+
+#all-posts #author{
+
+    margin-top: 200px;
+    font-size: 20px;
+    font-style: italic;
 }
 
 
