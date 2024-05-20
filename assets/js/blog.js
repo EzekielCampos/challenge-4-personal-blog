@@ -3,7 +3,7 @@
 
 
 
-let blogPosts = JSON.parse(localStorage.getItem('userPostInfo'));
+let userPostInfo = JSON.parse(localStorage.getItem('userPostInfo'));
 
 const blogSection = document.querySelector("#all-posts");
 
@@ -15,8 +15,10 @@ const takeOut= document.querySelector("#post-delete");
 function renderBlogPost(){
 
 
-    for(posts of blogPosts){
+    for(let index = 0; index< userPostInfo.length; index++){
+
         const contentBox = document.createElement('div');
+        contentBox.setAttribute("data-index", index);
         const title = document.createElement('h2');
         const blogContent = document.createElement('p');
         blogContent.setAttribute("id", "content");
@@ -28,15 +30,12 @@ function renderBlogPost(){
         removePost.setAttribute("id", "post-delete");
         removePost.textContent = "Delete Post";
 
-        title.innerHTML = posts.user;
-        blogContent.innerHTML = posts.post;
-        author.innerHTML = "Posted by " + posts.user;
+        title.innerHTML = userPostInfo[index].user;
+        blogContent.innerHTML = userPostInfo[index].post;
+        author.innerHTML = "Posted by " + userPostInfo[index].user;
 
         contentBox.append(title, blogContent, author, removePost);
         blogSection.append(contentBox);
-
-
-
     }
 
 
@@ -51,6 +50,24 @@ function redirect(){
 
 }
 
+function storePost(){
+
+    localStorage.setItem("userPostInfo", JSON.stringify(userPostInfo));
+    
+    }
+
+    function init() {
+
+        const storedPost = JSON.parse(localStorage.getItem('userPostInfo'));
+        // TODO: Describe the functionality of the following `if` statement.
+        if (storedPost !== null) {
+          userPostInfo = storedPost;
+        }
+     
+        renderBlogPost();
+      }
+    
+    
 
 // This will redirect the user back to the main page
 backButton.addEventListener("click", function(){
@@ -59,16 +76,26 @@ backButton.addEventListener("click", function(){
 
 });
 
+
+// Option to delete the post
 blogSection.addEventListener("click", function(event){
 
     const target = event.target;
 
-    if (target.matches("button"))
-        console.log("success");
+    if (target.matches("button")){
+
+        const index = target.parentElement.getAttribute("data-index");
+        userPostInfo.splice(index, 1);
+        storePost();
+        // renderBlogPost();
+
+
+
+    }
 
 
 
 });
 
 
-renderBlogPost();
+init();
