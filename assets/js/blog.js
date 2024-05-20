@@ -14,6 +14,8 @@ const takeOut= document.querySelector("#post-delete");
 // This function will show the blog post rendered on the page
 function renderBlogPost(){
 
+    blogSection.innerHTML ='';
+
 
     for(let index = 0; index< userPostInfo.length; index++){
 
@@ -30,7 +32,7 @@ function renderBlogPost(){
         removePost.setAttribute("id", "post-delete");
         removePost.textContent = "Delete Post";
 
-        title.innerHTML = userPostInfo[index].user;
+        title.innerHTML = userPostInfo[index].title;
         blogContent.innerHTML = userPostInfo[index].post;
         author.innerHTML = "Posted by " + userPostInfo[index].user;
 
@@ -87,7 +89,7 @@ blogSection.addEventListener("click", function(event){
         const index = target.parentElement.getAttribute("data-index");
         userPostInfo.splice(index, 1);
         storePost();
-        // renderBlogPost();
+        renderBlogPost();
 
 
 
@@ -98,4 +100,4 @@ blogSection.addEventListener("click", function(event){
 });
 
 
-init();
+renderBlogPost();
