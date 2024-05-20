@@ -5,9 +5,11 @@
 
 let blogPosts = JSON.parse(localStorage.getItem('userPostInfo'));
 
-const blogSection = document.querySelector("section");
+const blogSection = document.querySelector("#all-posts");
 
 const backButton = document.querySelector("button");
+
+const takeOut= document.querySelector("#post-delete");
 
 // This function will show the blog post rendered on the page
 function renderBlogPost(){
@@ -23,6 +25,7 @@ function renderBlogPost(){
         author.setAttribute("id", "author");
         // This element will give the option to delete post
         const removePost = document.createElement("button");
+        removePost.setAttribute("id", "post-delete");
         removePost.textContent = "Delete Post";
 
         title.innerHTML = posts.user;
@@ -56,6 +59,16 @@ backButton.addEventListener("click", function(){
 
 });
 
+blogSection.addEventListener("click", function(event){
+
+    const target = event.target;
+
+    if (target.matches("button"))
+        console.log("success");
+
+
+
+});
 
 
 renderBlogPost();

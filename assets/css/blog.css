@@ -7,6 +7,17 @@
     header{
         border-bottom: 5px #fff double;
     }
+
+    #all-posts div{
+        border: #fff 3px solid;
+
+    }
+
+    #all-posts h2{
+        border-bottom: #fff 2px solid;
+    }
+
+    
 }
 
 header{
@@ -20,8 +31,7 @@ header{
 
 #back-home{
 
-    position: absolute;
-    left: 1175px;
+ 
     padding:5px;
 
 
