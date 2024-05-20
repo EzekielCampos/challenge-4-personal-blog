@@ -14,19 +14,22 @@ function renderBlogPost(){
 
 
     for(posts of blogPosts){
+        const contentBox = document.createElement('div');
         const title = document.createElement('h2');
         const blogContent = document.createElement('p');
+        blogContent.setAttribute("id", "content");
         const author = document.createElement('p');
         // set this attribute to make modifications when it's rendered on page
         author.setAttribute("id", "author");
-        const contentBox = document.createElement('div');
-
+        // This element will give the option to delete post
+        const removePost = document.createElement("button");
+        removePost.textContent = "Delete Post";
 
         title.innerHTML = posts.user;
         blogContent.innerHTML = posts.post;
         author.innerHTML = "Posted by " + posts.user;
 
-        contentBox.append(title, blogContent, author);
+        contentBox.append(title, blogContent, author, removePost);
         blogSection.append(contentBox);
 
 
