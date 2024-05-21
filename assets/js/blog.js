@@ -90,11 +90,7 @@ blogSection.addEventListener("click", function(event){
         userPostInfo.splice(index, 1);
         storePost();
         renderBlogPost();
-
-
-
     }
-
 
 
 });

@@ -27,6 +27,7 @@ function redirect(){
 
 }
 
+// This function keeps all the data in local storage even after page refreshes
 function init() {
 
     const storedPost = JSON.parse(localStorage.getItem('userPostInfo'));
@@ -35,7 +36,6 @@ function init() {
       userPostInfo = storedPost;
     }
  
-    console.log('a');
   }
 
 // This submit all the data

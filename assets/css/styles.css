@@ -7,6 +7,22 @@
         border-bottom: 5px #fff double;
     }
 
+    header div{
+
+        margin-right: 10px;
+    border: #fff 2px solid;
+    height:20px;
+    width:40px;
+    border-radius: 20px;
+    padding:2px;   
+    background-color: chartreuse;
+    }
+    header p{
+
+        margin-left:20px;
+
+    }
+
     
 
     #message-to-user h2{
@@ -29,10 +45,19 @@ header{
 
 }
 
-header p{
+header div{
 
     margin-right: 10px;
-    
+    border: #000 2px solid;
+    height:20px;
+    width:40px;
+    border-radius: 20px;
+    padding:2px;    
+}
+header p{
+
+    position: relative;
+    bottom:15px;
 }
 
 #main-section{
@@ -66,17 +91,6 @@ height: 670px;
 
 }
 
-
-#sun:hover{
-
-    font-size: 20px;
-
-}
-
-#moon:hover{
-
-    font-size: 20px;
-}
 
 
 
