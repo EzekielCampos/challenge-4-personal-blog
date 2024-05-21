@@ -20,41 +20,21 @@ darkMode.addEventListener("click", function(event){
         // Updates all attributes and content to dark mode
         if (check === lightString){
 
-            const timerInterval = setInterval(function(){
-
                 emoji.setAttribute("id", "moon");
                 emoji.innerHTML = "&#127769";
                 change.setAttribute("class", "dark");
-                clearInterval(timerInterval);
-                
-
-
-            },500);
-            
+                clearInterval(timerInterval);            
         }
 
         else{
-
-            const timerInterval = setInterval(function(){
-
                 emoji.setAttribute("id", "sun");
                 emoji.innerHTML = " &#127774";
                 change.setAttribute("class", "light");
                 clearInterval(timerInterval);
 
-
-            },500);
-
-
-            
-
-            
-           
-
         }
 
     }
-
 
 
 });
