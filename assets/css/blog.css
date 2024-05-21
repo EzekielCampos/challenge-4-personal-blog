@@ -8,7 +8,7 @@
         border-bottom: 5px #fff double;
     }
 
-    header div{
+    #switch{
 
         margin-right: 10px;
     border: #fff 2px solid;
@@ -45,7 +45,7 @@ header{
 
 }
 
-header div{
+#switch{
 
     margin-right: 10px;
     border: #000 2px solid;
@@ -54,7 +54,7 @@ header div{
     border-radius: 20px;
     padding:2px;    
 }
-header p{
+#switch p{
 
     position: relative;
     bottom:15px;
@@ -101,14 +101,14 @@ padding:20px;
 border-bottom: #000 2px solid;
 
 }
-#all-posts #content{
+#content{
 
 
     overflow-wrap: break-word;
     line-height: 60px;
 }
 
-#all-posts #author{
+#author{
 
     margin-top: 100px;
     font-size: 20px;

@@ -26,6 +26,7 @@ darkMode.addEventListener("click", function(event){
                 clearInterval(timerInterval);            
         }
 
+// Updates all attributes and content to light mode
         else{
                 emoji.setAttribute("id", "sun");
                 emoji.innerHTML = " &#127774";
