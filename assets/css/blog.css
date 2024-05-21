@@ -32,6 +32,11 @@
     #all-posts h2{
         border-bottom: #fff 2px solid;
     }
+    footer{
+        border-top: #fff 5px double;
+
+
+    }
 
     
 }
@@ -123,6 +128,41 @@ border-bottom: #000 2px solid;
     transition:1s;
 }
 
+footer{
+
+    margin-top: 100%;
+    border-top: #000 5px double;
+    padding:10px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+   
+}
+footer p{
+    margin-top: 30px;
+    font-size: 15px;
+}
+#contact-info{
+
+    text-decoration: none;
+    font-style: italic;
+}
+
+
+
+
+#contact-info:hover{
+
+
+    text-decoration: none;
+    background-color: aliceblue;
+    padding:5px;
+    border-radius: 20px;
+
+}
+
+footer p::before{
+    content: "\25D1";
+}
 
 
 
