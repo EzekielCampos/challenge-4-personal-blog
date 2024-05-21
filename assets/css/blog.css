@@ -8,6 +8,22 @@
         border-bottom: 5px #fff double;
     }
 
+    header div{
+
+        margin-right: 10px;
+    border: #fff 2px solid;
+    height:20px;
+    width:40px;
+    border-radius: 20px;
+    padding:2px;   
+    background-color: chartreuse;
+    }
+    header p{
+
+        margin-left:20px;
+
+    }
+
     #all-posts div{
         border: #fff 3px solid;
 
@@ -27,6 +43,21 @@ header{
     align-items: center;
     border-bottom: 5px #000 double;
 
+}
+
+header div{
+
+    margin-right: 10px;
+    border: #000 2px solid;
+    height:20px;
+    width:40px;
+    border-radius: 20px;
+    padding:2px;    
+}
+header p{
+
+    position: relative;
+    bottom:15px;
 }
 
 #back-home{
@@ -84,18 +115,17 @@ border-bottom: #000 2px solid;
     font-style: italic;
 }
 
-
-
-#sun:hover{
-
-    font-size: 20px;
-
+#sun{
+    transition: 1s;
 }
 
-#moon:hover{
-
-    font-size: 20px;
+#moon{
+    transition:1s;
 }
+
+
+
+
 
 
 

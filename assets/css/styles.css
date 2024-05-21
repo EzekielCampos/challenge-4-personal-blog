@@ -124,3 +124,12 @@ height: 670px;
 
    
 }
+
+
+#sun{
+    transition: 1s;
+}
+
+#moon{
+    transition:1s;
+}
