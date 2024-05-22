@@ -1,7 +1,7 @@
 # Challenge 4 UC Berkeley Extension Student Blog Page
 
 ## Description
-This project is a two page website that allows a user to write and view a post on a blog page.  Using javascript and the DOM each blog post is inputted and stored in the local storage. Event listeners were primarily used to detect when a buttion was clicked. From here the post is rendered by dynamically creating each blog box and inserting the data from the local storage.  In addition to the box, there is a delete button that will delete the post from the webpage and update the content from local storage.  This project was built to practice using the DOM to manipulate, dynamically create, or delete html elements.  
+This project is a two page website that allows a user to write and view a post on a blog page.  Using javascript and the DOM each blog post is inputted and stored in the local storage. Event listeners were primarily used to detect when a buttion was clicked for submission. From here the post is rendered by dynamically creating each blog in a box and inserting the data from the local storage.  In addition to the box there is a delete button that will delete the post from the webpage and update the content being held in local storage.  This project was built to practice using the DOM to manipulate, dynamically create, or delete html elements.  
 
 ## Installations
 No installations used (NPM)
