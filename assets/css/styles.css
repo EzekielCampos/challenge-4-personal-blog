@@ -1,4 +1,4 @@
-
+/* Changes the display of the page to dark mode */
 .dark{
     background-color: #000;
     color: #fff;
@@ -22,9 +22,6 @@
         margin-left:20px;
 
     }
-
-    
-
     #message-to-user h2{
         background-color: darkgrey;
     }
@@ -65,6 +62,7 @@ header p{
 display: flex;
 
 }
+
 #message-to-user{
 
     display: flex;
@@ -74,13 +72,14 @@ border-right: 5px #000 double;
 height: 670px;
 
 }
+
+
 /* header text for user to see */
 #message-to-user h2{
 
     background-color: antiquewhite;
     padding: 50px;
     border-radius: 200px;
-    /* margin-top: 20%; */
     margin-right: 200px;
     margin-left: 75px;
     text-align: center;
@@ -93,13 +92,12 @@ height: 670px;
 
 
 
-
+/* Adjust how the page is rendered */
 @media  screen and (max-width:1050px) {
     
 
     #main-section{
         flex-direction: column;
-        /* justify-content: space-around; */
     }
 
     #message-to-user{
@@ -125,6 +123,8 @@ height: 670px;
    
 }
 
+
+/* These id are used for when the dark and light mode is switched */
 
 #sun{
     transition: 1s;

@@ -84,35 +84,33 @@ header{
 }
 
 
+/* All post that were created will be held inside a div */
 #all-posts div{
 
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; */
-
-    width:70%;
-
+ width:70%;
 border: #000 3px solid;
 margin-bottom: 20px;
 margin-top:10px;
 padding:20px;
 
 
-
 }
 
+/* This section will hold the dynamically created post */
 #all-posts h2{
 
 border-bottom: #000 2px solid;
 
 }
+
+/* This id will hold the content of the user post */
 #content{
 
 
     overflow-wrap: break-word;
     line-height: 60px;
 }
-
+/* This will show the name of the author */
 #author{
 
     margin-top: 100px;
@@ -120,17 +118,18 @@ border-bottom: #000 2px solid;
     font-style: italic;
 }
 
+/* This help change the display for light and dark mode */
 #sun{
     transition: 1s;
 }
-
+/* This help change the display for light and dark mode */
 #moon{
     transition:1s;
 }
 
 footer{
 
-    margin-top: 100%;
+    margin-top: 5%;
     border-top: #000 5px double;
     padding:10px;
     font-weight: bold;

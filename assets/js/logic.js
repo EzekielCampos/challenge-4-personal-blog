@@ -36,6 +36,4 @@ darkMode.addEventListener("click", function(event){
         }
 
     }
-
-
 });
