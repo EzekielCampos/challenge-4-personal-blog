@@ -3,8 +3,6 @@
 // Array to hold each post and credential 
 let userPostInfo = [];
 
-
-
 const userName= document.querySelector("#user-login");
 
 const titelOfPost = document.querySelector("#title-post");
@@ -43,8 +41,6 @@ submitButton.addEventListener("click", function(event){
 
 event.preventDefault();
 
-
-
 const userInput = userName.value;
 
 const userTitle = titelOfPost.value;
@@ -59,7 +55,6 @@ if (!userInput || !userTitle || !content){
 
 }
 
-
 userPostInfo.push({user:userInput, title:userTitle, post:content});
 
 userName.value = '';
@@ -68,7 +63,6 @@ usersPost.value = '';
 
 
 storePost();
-
 
 redirect();
 

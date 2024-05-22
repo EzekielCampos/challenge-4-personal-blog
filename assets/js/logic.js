@@ -23,7 +23,7 @@ darkMode.addEventListener("click", function(event){
                 emoji.setAttribute("id", "moon");
                 emoji.innerHTML = "&#127769";
                 change.setAttribute("class", "dark");
-                clearInterval(timerInterval);            
+                           
         }
 
 // Updates all attributes and content to light mode
@@ -31,7 +31,6 @@ darkMode.addEventListener("click", function(event){
                 emoji.setAttribute("id", "sun");
                 emoji.innerHTML = " &#127774";
                 change.setAttribute("class", "light");
-                clearInterval(timerInterval);
 
         }
 
