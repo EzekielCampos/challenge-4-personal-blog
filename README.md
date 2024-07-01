@@ -11,7 +11,7 @@ No installations used (NPM)
 This webpage can be used by students to record and share their thoughts and experiences on whatever subject they choose.  The post will continue to exist so that students can go back and review older post, and if they would like to they have the option to delete them.  
 
 ### Link
-https://ezekielcampos.github.io/challenge-4-personal-blog/index.html
+https://ezekielcampos.github.io/challenge-4-personal-blog-webpage/
 
 
 ### Screenshot of Main Page
